@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice game</title>
+
+    <!-- css for bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- javascript for bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section>
+      <div class="container-fluid title">
+        <h1 class="heading">Roll the dice</h1>
+        <p class="and">and</p>
+        <h2 class="winner-msg"><span></span> Find the winner!</h2>
+      </div>
+
+      <div class="container-fluid dice-images">
+        <div class="player">
+          <h3 class="player-1">Player1</h3>
+          <h3 class="player-2">Player2</h3>
+        </div>
+        <img
+          class="first-dice-image"
+          id="dice1"
+          src="images/dice_6.png"
+          alt="first_dice_image"
+        />
+
+        <img
+          class="second-dice-image"
+          id="dice2"
+          src="images/dice_6.png"
+          alt="second_dice_image"
+        />
+      </div>
+
+      <!-- Roll - Button -->
+      <div class="container-fluid roll-button">
+        <button id="button" class="btn btn-dark btn-lg" type="submit">
+          roll the dice
+        </button>
+      </div>
+    </section>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
